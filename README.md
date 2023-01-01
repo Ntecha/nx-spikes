@@ -12,7 +12,7 @@ add picture into yourinventory/html/imgages folder
 
 
 
-Previeuw : https://medal.tv/games/gta-v/clips/OJL0BWdDKp8CF/d1337dcLAxGv?invite=cr-MSxQb0YsMTU5ODY2MTk5LA
+Preview : https://medal.tv/games/gta-v/clips/OJL0BWdDKp8CF/d1337dcLAxGv?invite=cr-MSxQb0YsMTU5ODY2MTk5LA
 
 
 Original Script : https://github.com/loaf-scripts/loaf_spikestrips
