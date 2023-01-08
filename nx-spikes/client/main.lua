@@ -97,14 +97,19 @@ end
 
 -- events
 RegisterNetEvent("nx-spikes:client:usespikes", function()
+    local ped = PlayerPedId()
     local player = QBCore.Functions.GetPlayerData()
-    if Config.RequireJobPlace then 
-        if player.job.name == 'police' then 
-            DeployStinger()
-            TriggerServerEvent('nx-spikes:server:removespikes')
-        else 
-            QBCore.Functions.Notify('You are not trained to use this', 'error', 7500)
+    if not IsPedInAnyVehicle(ped, false)then
+        if Config.RequireJobPlace then 
+            if player.job.name == 'police' then 
+                DeployStinger()
+                TriggerServerEvent('nx-spikes:server:removespikes')
+            else 
+                QBCore.Functions.Notify('You are not trained to use this', 'error', 7500)
+            end
         end
+    else
+        QBCore.Functions.Notify('You can\'t use spikes while in a vehicle', 'error', 7500)
     end
 end)
 
